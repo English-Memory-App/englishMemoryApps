@@ -1,0 +1,268 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="enabled">
+   <bool>true</bool>
+  </property>
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>900</width>
+    <height>600</height>
+   </rect>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>900</width>
+    <height>600</height>
+   </size>
+  </property>
+  <property name="maximumSize">
+   <size>
+    <width>900</width>
+    <height>600</height>
+   </size>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true"/>
+  </property>
+  <widget class="QWidget" name="centralWidget">
+   <widget class="QTableView" name="tableView">
+    <property name="enabled">
+     <bool>true</bool>
+    </property>
+    <property name="geometry">
+     <rect>
+      <x>30</x>
+      <y>30</y>
+      <width>701</width>
+      <height>501</height>
+     </rect>
+    </property>
+    <property name="cursor" stdset="0">
+     <cursorShape>PointingHandCursor</cursorShape>
+    </property>
+    <property name="styleSheet">
+     <string notr="true"/>
+    </property>
+    <property name="sortingEnabled">
+     <bool>false</bool>
+    </property>
+   </widget>
+   <widget class="QFrame" name="frame_2">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>0</y>
+      <width>901</width>
+      <height>561</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:0, stop:0 rgba(251,102,102, 200), stop:1 rgba(20,196,188, 210));
+</string>
+    </property>
+    <property name="frameShape">
+     <enum>QFrame::StyledPanel</enum>
+    </property>
+    <property name="frameShadow">
+     <enum>QFrame::Raised</enum>
+    </property>
+    <widget class="QFrame" name="frame">
+     <property name="geometry">
+      <rect>
+       <x>760</x>
+       <y>30</y>
+       <width>95</width>
+       <height>95</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-image: url(:/new/prefix1/Image/wind.png);</string>
+     </property>
+     <property name="frameShape">
+      <enum>QFrame::StyledPanel</enum>
+     </property>
+     <property name="frameShadow">
+      <enum>QFrame::Raised</enum>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="learnBtn">
+     <property name="geometry">
+      <rect>
+       <x>750</x>
+       <y>195</y>
+       <width>131</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="cursor">
+      <cursorShape>OpenHandCursor</cursorShape>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">border-image: url();
+font: 25 11pt '微软雅黑 Light';
+color: rgb(31,31,31);
+padding-left:20px;
+background-color: rgb(255, 255, 255);
+border:2px solid rgb(0,0,0);border-radius:15px;</string>
+     </property>
+     <property name="text">
+      <string>学习单词</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="wordBtn">
+     <property name="geometry">
+      <rect>
+       <x>750</x>
+       <y>400</y>
+       <width>131</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="cursor">
+      <cursorShape>ClosedHandCursor</cursorShape>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">border-image: url();
+font: 25 11pt '微软雅黑 Light';
+color: rgb(31,31,31);
+padding-left:20px;
+background-color: rgb(255, 255, 255);
+border:2px solid rgb(0,0,0);border-radius:15px;</string>
+     </property>
+     <property name="text">
+      <string>返回单词本</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label">
+     <property name="geometry">
+      <rect>
+       <x>750</x>
+       <y>129</y>
+       <width>151</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>微软雅黑 Light</family>
+       <pointsize>9</pointsize>
+       <weight>3</weight>
+       <italic>false</italic>
+       <bold>false</bold>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">border-image: url();
+font: 25 9pt '微软雅黑 Light';
+color: rgb(31,31,31);
+padding-left:20px;
+background-color: rgb(255, 255, 255);
+border:2px solid rgb(20,196,188);border-radius:15px;</string>
+     </property>
+     <property name="text">
+      <string>单词总量：</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignJustify|Qt::AlignVCenter</set>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="searchlineEdit">
+     <property name="enabled">
+      <bool>true</bool>
+     </property>
+     <property name="geometry">
+      <rect>
+       <x>750</x>
+       <y>262</y>
+       <width>131</width>
+       <height>30</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">border-image: url();
+font: 25 11pt '微软雅黑 Light';
+color: rgb(31,31,31);
+padding-left:20px;
+background-color: rgb(255, 255, 255);
+border:2px solid rgb(20,196,188);border-radius:15px;</string>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignJustify|Qt::AlignVCenter</set>
+     </property>
+     <property name="placeholderText">
+      <string>输入单词</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="search_nBtn">
+     <property name="geometry">
+      <rect>
+       <x>750</x>
+       <y>334</y>
+       <width>131</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">border-image: url();
+font: 25 11pt '微软雅黑 Light';
+color: rgb(31,31,31);
+padding-left:20px;
+background-color: rgb(255, 255, 255);
+border:2px solid rgb(0,0,0);border-radius:15px;</string>
+     </property>
+     <property name="text">
+      <string>搜索单词</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="collBtn">
+     <property name="geometry">
+      <rect>
+       <x>750</x>
+       <y>470</y>
+       <width>131</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="cursor">
+      <cursorShape>ClosedHandCursor</cursorShape>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">border-image: url();
+font: 25 11pt '微软雅黑 Light';
+color: rgb(31,31,31);
+padding-left:20px;
+background-color: rgb(255, 255, 255);
+border:2px solid rgb(0,0,0);border-radius:15px;</string>
+     </property>
+     <property name="text">
+      <string>展示收藏单词</string>
+     </property>
+    </widget>
+   </widget>
+   <zorder>frame_2</zorder>
+   <zorder>tableView</zorder>
+  </widget>
+  <widget class="QToolBar" name="mainToolBar">
+   <attribute name="toolBarArea">
+    <enum>TopToolBarArea</enum>
+   </attribute>
+   <attribute name="toolBarBreak">
+    <bool>false</bool>
+   </attribute>
+  </widget>
+  <widget class="QStatusBar" name="statusBar"/>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <resources/>
+ <connections/>
+</ui>
